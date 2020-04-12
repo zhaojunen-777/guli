@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/weixin-pay")
+@RequestMapping("/api/order/weixin-pay")
 @Api(description = "网站微信支付")
 @CrossOrigin //跨域
 @Slf4j

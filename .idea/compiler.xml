@@ -8,10 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common-util" />
         <module name="eureka" />
+        <module name="service-order" />
+        <module name="api-gateway" />
         <module name="service-vod" />
         <module name="service-edu" />
         <module name="service-ucenter" />
-        <module name="service-order" />
         <module name="service-base" />
         <module name="service-sms" />
         <module name="service-oss" />
@@ -19,6 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
       <module name="common" target="1.8" />
       <module name="common-util" target="1.8" />
       <module name="eureka" target="1.8" />
@@ -41,6 +43,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="common-util" options="-parameters" />
       <module name="eureka" options="-parameters" />
